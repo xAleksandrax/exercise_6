@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StampCoin Blockchain</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>StampCoin Blockchain</h1>
+        <img src="static/coin.png" alt="StampCoin Logo">
+        <button onclick="mine()">Mine a new block</button>
+        <p id="message"></p>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>New StampCoin Transaction</h2>
+            <img src="static/guy.png" alt="Random Logo 1">
+            <form id="transactionForm">
+                <input id="owner" type="text" placeholder="Owner" required>
+                <input id="stamp" type="text" placeholder="Stamp" required>
+                <input id="year" type="number" placeholder="Year" required>
+                <input id="value" type="number" placeholder="Value" required>
+                <button type="submit">Send StampCoin</button>
+            </form>
+            <p id="transaction_message"></p>
+        </section>
+
+        <section class="container">
+            <h2>Blockchain Information</h2>
+            <img src="static/idk.png" alt="Random Logo 2">
+            <button onclick="getChainLength()">Get Chain Length</button>
+            <p id="chain_length"></p>
+            <button onclick="getNetworkNodes()">Get Network Nodes</button>
+            <p id="network_nodes"></p>
+        </section>
+    </main>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
