@@ -5,8 +5,6 @@ StampCoin Blockchain is a simple blockchain project written in Python, utilizing
 To run the project, follow these steps:
 
 Run the blockchain server:
-
-Skopiuj kod
 python blockchain.py
 Open a web browser and navigate to http://localhost:5000/.
 
